@@ -80,7 +80,7 @@ def filter_pipes(P, material):
     else:
         st.write(f"Available pipes for {P} bar or higher pressure:")
         df = pd.DataFrame(available_pipes)
-        st.dataframe(df[['External diameter (mm)', 'Wall thickness (mm)', 'Cost per m (Euro)']])
+        st.dataframe(df[['External diameter (mm)', 'Wall thickness (mm)', 'Cost per 100 m (Euro)']])
 
 # Function to choose and display available pipes
 def Pipe_finder(material, P):
